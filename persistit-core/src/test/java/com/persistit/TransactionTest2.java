@@ -16,6 +16,9 @@
 
 package com.persistit;
 
+import org.junit.Ignore;
+
+
 import com.persistit.Transaction.CommitPolicy;
 import com.persistit.exception.PersistitClosedException;
 import com.persistit.exception.PersistitException;
@@ -242,6 +245,7 @@ public class TransactionTest2 extends PersistitUnitTestCase {
     }
 
     @Test
+    @Ignore
     public void transactionsConcurrentWithPersistitClose() throws Exception {
         new Thread(new Runnable() {
             @Override

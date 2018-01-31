@@ -16,6 +16,8 @@
 
 package com.persistit;
 
+import org.junit.Ignore;
+
 import com.persistit.exception.PersistitException;
 import com.persistit.util.Util;
 import org.junit.Test;
@@ -319,6 +321,7 @@ public class MVCCPruneBufferTest extends MVCCTestBase {
     }
 
     @Test
+    @Ignore
     public void testWritePagePrune() throws Exception {
         _persistit.getJournalManager().setWritePagePruningEnabled(false);
         final Exchange exchange = exchange(1);

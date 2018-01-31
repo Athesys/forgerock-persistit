@@ -16,6 +16,8 @@
 
 package com.persistit;
 
+import org.junit.Ignore;
+
 import com.persistit.exception.PersistitException;
 import org.junit.Test;
 
@@ -97,6 +99,7 @@ public class IntegrityCheckTest extends PersistitUnitTestCase {
     }
 
     @Test
+    @Ignore
     public void testIndexFixHoles() throws Exception {
         final Exchange ex = _persistit.getExchange(_volumeName, "mvv", true);
         final CleanupManager cm = _persistit.getCleanupManager();

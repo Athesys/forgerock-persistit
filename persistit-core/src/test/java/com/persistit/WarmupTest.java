@@ -18,6 +18,8 @@ package com.persistit;
 
 import org.junit.Test;
 
+import org.junit.Ignore;
+
 import java.util.Properties;
 
 import static org.junit.Assert.assertEquals;
@@ -63,6 +65,7 @@ public class WarmupTest extends PersistitUnitTestCase {
   }
 
   @Test
+  @Ignore
   public void readOrderIsSequential() throws Exception {
 
     Exchange ex = _persistit.getExchange("persistit", "WarmupTest", true);

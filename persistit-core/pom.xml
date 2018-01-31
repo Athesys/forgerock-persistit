@@ -12,6 +12,9 @@
   <packaging>jar</packaging>
 
   <name>forgerock-persistit-core</name>
+  
+  
+  
 
   <dependencies>
     <dependency>

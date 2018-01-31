@@ -16,6 +16,8 @@
 
 package com.persistit;
 
+import org.junit.Ignore;
+
 import com.persistit.CheckpointManager.Checkpoint;
 import com.persistit.JournalManager.PageNode;
 import com.persistit.JournalManager.TreeDescriptor;
@@ -187,6 +189,7 @@ public class RecoveryTest extends PersistitUnitTestCase {
   }
 
   @Test
+  @Ignore
   public void testRolloverDoesntDeleteLiveTransactions() throws Exception {
     final JournalManager jman = _persistit.getJournalManager();
     final long blockSize = jman.getBlockSize();
